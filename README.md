@@ -1,6 +1,6 @@
 # Frontend LaunchX
-¡Hola! Aqui estaré anexando las evidencias de los ejercicios del del Frontend LaunchX
-Si llegaste aqui de casualidad es probable no le encuentres mucha utilidad... aun asi bienvenido :D
+¡Hola! Aqui estaré anexando las evidencias de los ejercicios del del Frontend LaunchX.   
+Si llegaste aqui de casualidad es probable no le encuentres mucha utilidad... aun asi bienvenido :D  
 Si por el contrario eres un Sherpa o un Commander por favor toma esto mientras lees. 🍪 ☕
 
 ## 01 - Intro
