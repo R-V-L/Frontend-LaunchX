@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="one">
+            Vacunacion<span>Pepe</span>
+        </div>
+        <div class="two caja">Two</div>
+        <div class="three caja"></div>
+        <div class="four caja">Cuatro</div>
+        <div class="five caja">Five</div>
+    </div>
+</body>
+<style>
+    .caja {
+        border: 0px solid;
+        background: orange;
+        opacity: 50%;
+    }
+
+    .wrapper {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 0px;
+        grid-auto-rows: minmax(100px, auto);
+    }
+
+    .one {
+        grid-column: 1 / 5;
+        grid-row: 1;
+    }
+
+    .two {
+        background: #ffffff;
+        grid-column: 1 / 3;
+        grid-row: 2 / 7;
+    }
+
+    .three {
+        grid-column: 3 / 5;
+        grid-row: 2 / 10;
+        opacity: 100% !important;
+        background: url('https://i.imgur.com/aoGc9Oz.png'), linear-gradient(to bottom right, #0899e6, #375fda);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: bottom;
+    }
+
+    .four {
+        grid-column: 1 / 4;
+        grid-row: 8;
+        background: blue;
+    }
+
+    .five {
+        grid-column: 1 / 5;
+        grid-row: 10;
+    }
+</style>
+
+</html>
