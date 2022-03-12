@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pokedex</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@10.2.6/dist/autoComplete.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@10.2.6/dist/css/autoComplete.min.css">
 </head>
 <body>
     <h1>Pokedex LaunchX</h1>
@@ -15,6 +17,20 @@
     <button onclick="fetchPokemon()">Cambiar pokemon</button>
 </body>
 <script>
+    function getPokemonNames() {
+        const url = "https://pokeapi.co/api/v2/pokemon/?limit=1126"
+        fetch(url).then((res) => {
+            return res.json()
+        }).then((data) => {            
+            // console.log(data.results)
+            for (i in data.results) {
+                console.log(data.results[i].name)
+            }
+        })
+    }
+
+    getPokemonNames()
+
     function fetchPokemon() {
         const pokeName = document.getElementById("pokeName").value.toLowerCase()
         const url = `https://pokeapi.co/api/v2/pokemon/${pokeName}`

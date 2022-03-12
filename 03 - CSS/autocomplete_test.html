@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <title>Pokedex</title>
+</head>
+<body>
+<form>
+    <div class="row mt-2">
+        <div class="col-4 col-lg-2 offset-1 offset-lg-2">
+            <input class="form-control-sm" id="form1" type="text" autocorrect="off" autocomplete="off" autocapitalize="off">
+            <div class="position-absolute invisible" id="form1_complete"></div>
+            <button type="button" class="btn btn-primary">Buscar</button>
+        </div>
+        <div class="col-4 col-lg-2">
+            <p>Example 1 for an autocomplete in a small input field.</p>
+            <p>Starts at 3 inputed characters by deafault.</p>
+            <p>Returned list include first five results by default.</p>
+        </div>
+    </div>
+</form>
+<script src="autocomplete.js"></script>
+<script>
+    var pokemon = []
+    
+    function obtenerNombresPokemon() {           
+        const url = "https://pokeapi.co/api/v2/pokemon/?limit=1126"
+        fetch(url).then((res) => {
+            return res.json()
+        }).then((data) => {
+            for (i in data.results) {
+                pokemon.push(data.results[i].name)
+            }
+        })
+    } 
+    obtenerNombresPokemon()
+    set_autocomplete('form1', 'form1_complete', pokemon);
+</script>
+</body>
+</html>
