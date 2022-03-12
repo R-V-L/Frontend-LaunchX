@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+</head>
+<body>
+    <h1>Pokedex LaunchX</h1>
+    <input type="text" placeholder="pikachu" name="pokeName" id="pokeName">
+    <br>
+    <img id="pokeImg" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Pokebola-pokeball-png-0.png/769px-Pokebola-pokeball-png-0.png" alt="Pokemon" width="150px">
+    <br>
+    <button onclick="fetchPokemon()">Cambiar pokemon</button>
+</body>
+<script>
+    function fetchPokemon() {
+        const pokeName = document.getElementById("pokeName").value.toLowerCase()
+        const url = `https://pokeapi.co/api/v2/pokemon/${pokeName}`
+        fetch(url).then((res) => {
+            //console.log(res)
+            if(res.status != 200) {
+                console.log(res)
+                pokeImage("https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Pokebola-pokeball-png-0.png/769px-Pokebola-pokeball-png-0.png")
+            } else {
+                return res.json()
+            }
+        }).then((data) => {
+            console.log(data)
+            let pokeImg = data.sprites
+            console.log(pokeImg.front_default)
+            pokeImage(pokeImg.front_default)
+        })
+    }
+
+    function pokeImage(url) {
+        const pokeImg = document.getElementById("pokeImg")
+        pokeImg.src = url
+    }
+
+    function imprimir() {
+        console.log("Fierro pariente")
+        console.log("Hola ")
+    }
+</script>
+</html>

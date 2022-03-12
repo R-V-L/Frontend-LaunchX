@@ -12,7 +12,15 @@
     <div class="wrapper">
         <div class="one">
             <div class="titulo">Vacunacion</div>
-            <div class="controles">Vacunacion</div>
+            <div class="controles">
+                <ul class="nav">
+                    <li><a href="/home">Base de datos</a></li>
+                    <li><a href="/home">Educacion</a></li>
+                    <li><a href="/blog">Noticias</a></li>
+                    <li><a href="/blog">Regulacion</a></li>
+                    <button class="button button1">Mentiras sobre vacunas</button>
+                </ul>
+            </div>
         </div>
         <div class="two caja">
             <img class="triangulo1"
@@ -28,12 +36,30 @@
     </div>
 </body>
 <style>
+    @import url('https://fonts.googleapis.com/css2?family=Fredoka');
+
+    .button {
+        background-color: #3252d0;
+        border: none;
+        color: white;
+        padding: 15px 25px;
+        border-radius: 6px;
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    ul.nav>li {
+
+        display: inline-block;
+        padding: 0px 15px;
+    }
+
+    li>a {
+        color: #6d7b93;
+        text-decoration: none;
+    }
+
     body {
-        font-family: 'loew-heavy';
-        src: url('https://github.com/R-V-L/Frontend-LaunchX/blob/master/03%20-%20CSS/font/loew-heavy-webfont.woff2?raw=true') format('woff2'),
-            url('https://github.com/R-V-L/Frontend-LaunchX/blob/master/03%20-%20CSS/font/loew-heavy-webfont.woff?raw=true') format('woff');
-        font-weight: normal;
-        font-style: normal;
+        font-family: 'Fredoka', sans-serif;
     }
 
     .caja {
@@ -45,16 +71,17 @@
     .titulo {
         color: #3252d0;
         font-size: 36px;
+        font-weight: bold;
         top: 30px;
         position: relative;
         left: 7%;
     }
 
     .controles {
-        color: #7c89a0;
+        top: 15px;
         font-size: 28px;
-        left: 50%;
-        position: relative;
+        right: 10%;
+        position: absolute;
     }
 
     .wrapper {
@@ -83,7 +110,6 @@
         position: relative;
         left: 5%;
     }
-
 
     .triangulo2 {
         transform: rotate(-90deg);
