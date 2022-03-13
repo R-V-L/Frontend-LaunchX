@@ -77,7 +77,7 @@ body {
 .tres {
     grid-column: 3 / 5;
     grid-row: 2 / 10;
-    background: url('..accordion/img/vaccine.png'), linear-gradient(to bottom right, #0899e6, #375fda);
+    background: url('../img/vaccine.png'), linear-gradient(to bottom right, #0899e6, #375fda);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: bottom;
