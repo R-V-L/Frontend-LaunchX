@@ -7,148 +7,699 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>Vacunacion</title>
 </head>
 
 <body>
-
-    <style>
-        body {
-            font-family: sans-serif;
-        }
-
-        .navbar-brand {
-            color: #2b4bc9 !important;
-            margin-left: 10%;
-            margin-top: 30px;
-            margin-bottom: 30px;
-            font-weight: bold;
-            font-size: 28px;
-        }
-
-        .navbar {
-            background: white;
-            background: linear-gradient(to right, white 50%, #e7f3fc 50%);
-        }
-
-        /* Pen-specific styles */
-        * {
-            box-sizing: border-box;
-        }
-
-        body {
-            font-size: 1.25rem;
-            font-family: sans-serif;
-            line-height: 150%;
-            /*  text-shadow: 0 2px 2px #b6701e; */
-        }
-
-        section {
-            color: #fff;
-            text-align: center;
-        }
-
-        div {
-            height: 100%;
-        }
-
-        article {
-            position: absolute;
-            top: 400px;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            width: 100%;
-            padding: 20px;
-        }
-
-        h1 {
-            font-weight: bold;
-            font-size: 64px;
-        }
-
-        .container {
-            display: table;
-            width: 100%;
-        }
-
-        .left-half {
-            position: absolute;
-            left: 0px;
-            width: 50%;
-            color: #203e72 !important;
-        }
-
-        .right-half {
-            background-color: #217cdf;
-            position: absolute;
-            right: 0px;
-            width: 50%;
-        }
-
-        .boton-nav {
-            background-color: #3454d2;
-            margin-right: 10%;
-            margin-left: 5%;
-        }
-
-        .triangulo1 {
-            width: 0;
-            border-left: 150px solid transparent;
-            border-right: 150px solid transparent;
-            border-bottom: 150px solid #f4f6fb;
-            transform: rotate(-90deg);
-            position: float;
-            margin-left: calc(50% - 225px);
-            margin-top: 500px;
-        }
-
-        article {
-            margin-top: -150px;
-        }
-        img {
-            max-width: 85%;
-            height: auto;
-        }
-    </style>
-
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Vacunacion</a>
-        <ul class="navbar-nav ms-auto">
-            <li>
-                <a href="#" class="nav-link m-2">Base de datos</a>
-            </li>
-            <li>
-                <a href="#" class="nav-link m-2">Educacion</a>
-            </li>
-            <li>
-                <a href="#" class="nav-link m-2">Noticias</a>
-            </li>
-            <li>
-                <a href="#" class="nav-link m-2">Regulacion</a>
-            </li>
-        </ul>
-        <button type="button" class="btn btn-primary boton-nav">Mentiras sobre las vacunas</button>
-    </nav>
-
-    <section class="container">
-        <div class="left-half">
-            <article>
+    <div class="wrapper">
+        <div class="uno">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="#">Vacunacion</a>
+                <ul class="navbar-nav ms-auto">
+                    <li>
+                        <a href="#" class="nav-link m-2">Base de datos</a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link m-2">Educacion</a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link m-2">Noticias</a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link m-2">Regulacion</a>
+                    </li>
+                </ul>
+                <button type="button" class="btn btn-primary boton-nav shadow-lg">Engaños Sobre Vacunas</button>
+            </nav>
+        </div>
+        <div class="dos">
+            <img class="triangulo1"
+                src="https://raw.githubusercontent.com/R-V-L/Frontend-LaunchX/master/03%20-%20CSS/img/triangulo.png"
+                alt="triangulo1">
+            <img class="triangulo2"
+                src="https://raw.githubusercontent.com/R-V-L/Frontend-LaunchX/master/03%20-%20CSS/img/triangulo.png"
+                alt="triangulo2">
+            <div class="art1">
                 <h1 class="h1-titulo">Combate El Virus Con Vacunas</h1>
-                <p>Weekends don't count unless you spend them doing something completely pointless.</p>
-            </article>
+                <p class="text-muted">Detengamos la pandemia al acabar el virus con vacunas. No dejes que tu, o tu familia, se infecten.</p>
+                <div class="iconos-dorados-contenedor">
+                    <div><span class="material-icons iconos-dorados">verified_user</span> La mejor proteccion</div>
+                    <div><span class="material-icons iconos-dorados">star</span> Vacunas seleccionadas</div>
+                </div>
+            </div>
         </div>
-        <div class="right-half">
-            <article>
-                <img src="./img/vaccine.png" alt="Vacuna" >
-            </article>
+        <div class="tres"></div>
+        <div class="cuatro">
+            <div class="card card-body primer-card text-muted">
+                <div class="row">
+                    <div class="column">
+                        <span class="material-icons">location_on</span> Fecha<br>
+                        <select>
+                            <option>Jakarta Utara</option>
+                            <option>Merida</option>
+                            <option>Tijuana</option>
+                            <option>Culiacan</option>
+                        </select>
+                    </div>
+                    <div class="column">
+                        <span class="material-icons">date_range</span> Fecha<br>
+                        <input type="date" class="date" value="2022-04-18">
+                    </div>
+                    <div class="column">
+                        <span class="material-icons">vaccines</span> Vacuna<br>
+                        <select>
+                            <option>Moderna</option>
+                            <option>Pfizer-BioNTech</option>
+                            <option>Janssen</option>
+                            <option>AstraZeneca</option>
+                        </select>
+                    </div>
+                  </div>
+            </div>
         </div>
-        <div class="triangulo1"></div>
-
-    </section>
-
+        <div class="cinco">
+            <div class="row2">
+                <div class="column2">
+                    <img src="./img/astrazeneca.png" width="50%" alt="astrazeneca">
+                </div>
+                <div class="column2">
+                    <img src="./img/sinovac.png" width="50%" alt="sinovac" style="margin-top: 17px;">
+                </div>
+                <div class="column2">
+                    <img src="./img/pfizer.png" width="50%" alt="pfizer" style="margin-top: -10px;">
+                </div>
+                <div class="column2 columnatriangulo">
+                    <img src="./img/moderna.png" width="50%" alt="moderna" style="margin-top: 15px;">
+                </div>
+            </div>
+        </div>
+        <div class="seis">
+            <div class="triangulo3"></div>
+            <div class="triangulo4"></div>
+            <div class="art2">
+                <h1 class="h1-titulo">¿Porque deberia vacunarme?</h1>
+                <p class="text-muted">Para evitar cualquier duda respecto a si deberia tomar la vacuna del COVID-19, observe los siguientes beneficios respecto a la vacuna:</p>
+            </div>
+        </div>
+        <div class="siete">
+            <div class="card-group">
+                <div class="card card2">
+                  <div class="card-body cb2">
+                        <span class="material-icons mi2">remove_road</span>
+                        <h5 class="card-title">Minimiza la propagacion del virus</h5>
+                    <p class="card-text">Las vacunas han mostrado ser efectivas para prevenir la infeccion del Coronavirus.</p>
+                  </div>
+                </div>
+                <div class="card card2">
+                    <div class="card-body cb2">
+                        <span class="material-icons mi2">verified_user</span>
+                        <h5 class="card-title">Generando anticuerpos</h5>
+                        <p class="card-text">La vacuna contra el COVID-19 ayuda a que el sistema inmune genere anticuerpos.</p>
+                    </div>
+                  </div>
+                  <div class="card card2">
+                    <div class="card-body cb2">
+                        <span class="material-icons mi2">groups</span>
+                        <h5 class="card-title">Protegiendo a las personas alrededor</h5>
+                        <p class="card-text">Los beneficios de la vacuna contra el COVID-19 ayudan a proteger a las personas a nuestro alrededor.</p>
+                    </div>
+                  </div>
+                  <div class="card card2">
+                    <div class="card-body cb2">
+                        <span class="material-icons mi2">health_and_safety</span>
+                        <h5 class="card-title">Creando inmunidad grupal</h5>
+                        <p class="card-text">La vacuna tambien es benefica para crear inmunidad de grupo.</p>
+                    </div>
+                  </div>
+            </div>
+        </div>
+        <div class="ocho">
+            <div class="triangulo5"></div>
+            <div class="triangulo6"></div>
+        </div>
+        <div class="nueve">
+            <div class="art3">
+                <h1 class="h1-titulo">Preparaciones Previa a la Vacuna</h1>
+                <p class="text-muted">El exito de la vacuna esta fuertemente influenciada por la fortaleza del sistema inmune. Por lo tanto, existen multiples tareas que podemos intentar para que la vacuna funcione:</p>
+            </div>
+        </div>
+        <div class="diez">
+            <img src="./img/doctora.png" height="125%" alt="doctora">
+        </div>
+        <div class="once">
+            <div class="accordion" id="accordionFlushExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                            <span class="material-icons">gpp_bad</span>Evitar bebidas alcoholicas
+                        </button>
+                    </h2>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="true" aria-controls="flush-collapseTwo">
+                            <span class="material-icons">cancel</span>Evitar el estres
+                        </button>
+                    </h2>
+                    <div id="flush-collapseTwo" class="accordion-collapse collapse show" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">El estres tiene una un efecto profundo en el sistema inmune. De igual manera, el estres prolongado puede aumentar los niveles de cortisol y de oxidativos en el cuerpo.</div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                            <span class="material-icons">restaurant</span>Comer saludable
+                        </button>
+                    </h2>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                            <span class="material-icons">check_box</span>Dormir lo suficiente
+                        </button>
+                    </h2>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                            <span class="material-icons">favorite</span>Ejercicio o actividad fisica
+                        </button>
+                    </h2>
+                </div>
+            </div>
+        </div>
+        <div class="doce">
+            <div class="triangulo3"></div>
+            <div class="triangulo4"></div>
+            <div class="art2 art4">
+                <h1 class="h1-titulo">Contacto de Emergencia</h1>
+                <p class="text-muted">Llame alguno de los contactos mostrados a continuacion si tu o tu familia sienten malestares o si tienen sintomas parecidos al COVID-19, asegurate de cuidarte antes de reportarte con nosotros:</p>
+            </div>
+        </div>
+        <div class="trece">
+            <div class="row row-cols-1 row-cols-md-2 g-4">
+                <div class="col">
+                    <div class="card card3">
+                        <div class="card-body">
+                            <span class="material-icons mi2 mi3">phone_in_talk</span>
+                            Llamar<h6 class="text-muted">021.123.145.14</h6>
+                            <a class="btn btn-info active" role="button" aria-pressed="true">Llamar</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card card3">
+                        <div class="card-body">
+                            <span class="material-icons mi2 mi3">sms</span>
+                            Mensaje<h6 class="text-muted">021.123.145.14</h6>
+                            <a class="btn btn-primary active" role="button" aria-pressed="true">Mensajear ahora</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card card3">
+                        <div class="card-body">
+                            <span class="material-icons mi2 mi3">videocam</span>
+                            Video<h6 class="text-muted">021.123.145.14</h6>
+                            <a class="btn btn-info active" role="button" aria-pressed="true">Iniciar</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card card3">
+                        <div class="card-body">
+                            <span class="material-icons mi2 mi3">email</span>
+                            Correo<h6 class="text-muted">021.123.145.14</h6>
+                            <a class="btn btn-info active" role="button" aria-pressed="true">Enviar correo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="catorce">
+            <img src="./img/doctor.png" height="125%" alt="doctor">
+        </div>
+        <div class="quince"></div>
+        <div class="dieciseis">
+            <div class="row p2">
+                <div class="col-6">
+                    <h2 class="v1">Vacunacion</h2>
+                    <p>Nuestro objetivo es ayudar a que el mundo se libere de la pandemia del COVID-19</p>
+                </div>
+                <div class="col-2">
+                    <h2 class="v2">Acerca de</h2>
+                    <p>Sobre nosotros</p>
+                    <p>Caracteristicas</p>
+                    <p>Noticias y blog</p>
+                </div>
+                <div class="col-2">
+                    <h2 class="v2">Compañia</h2>
+                    <p>¿Como trabajamos?</p>
+                    <p>Capital</p>
+                    <p>Seguridad</p>
+                </div>
+                <div class="col-2">
+                    <h2 class="v2">Soporte</h2>
+                    <p>Preguntas comunes</p>
+                    <p>Centro de Soporte</p>
+                    <p>Contactanos</p>
+                </div>
+            </div>
+        </div>
+        <div class="diecisiete p2">
+            <div style="float: left;">@2021 Vacunacion. Todos los derechos reservados.</div>
+            <div style="float: right;">Terminos y condiciones. &nbsp; &nbsp; Politica de privacidad.</div>      
+        </div>
+    </div>
 </body>
+
+<style>
+    body {
+        font-family: sans-serif;
+        font-size: 1.25rem;
+    }
+
+    .wrapper {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 0px;
+        grid-auto-rows: minmax(100px, auto);
+    }
+
+    .boton-nav {
+        background-color: #3454d2;
+        margin-right: 10%;
+        margin-left: 5%;
+    }
+
+    .uno {
+        grid-column: 1 / 5;
+        grid-row: 1;
+    }
+
+    .navbar-brand {
+        color: #2b4bc9 !important;
+        margin-left: 10%;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        font-weight: bold;
+        font-size: 28px;
+    }
+
+    .navbar {
+        background: linear-gradient(to right, white 50%, #e7f3fc 50%);
+    }
+
+    .triangulo1 {
+        transform: rotate(180deg);
+        width: 150px;
+        height: 80px;
+        position: relative;
+        left: 5%;
+    }
+
+    .triangulo2 {
+        transform: rotate(-90deg);
+        width: 250px;
+        height: 150px;
+        position: relative;
+        right: -50px;
+        top: 400px;
+        float: right;
+    }
+
+    .dos {
+        background: #ffffff;
+        grid-column: 1 / 3;
+        grid-row: 2 / 7;
+    }
+
+    .h1-titulo {
+        color: #1f3e72;
+        font-weight: bold;
+        font-size: 52px;
+    }
+
+    .art1 {
+        padding-top: 5%;
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+
+    .tres {
+        grid-column: 3 / 5;
+        grid-row: 2 / 10;
+        background: url('./img/vaccine.png'), linear-gradient(to bottom right, #0899e6, #375fda);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: bottom;
+    }
+    
+    .cuatro {
+        grid-column: 1 / 3;
+        grid-row: 8;
+    }
+
+    .material-icons {
+        background: #e9f1fe;
+        color: #3353d1;
+    }
+
+    .iconos-dorados {
+        background: #fffdf5;
+        color: #ffd012;
+    }
+
+    .iconos-dorados-contenedor {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    select, .date {
+        padding-left: 30px;
+        border: none;
+    }
+
+    .primer-card {
+        left: 20%;
+        font-weight: bold;
+    }
+
+    .column {  
+        width: 33.33%; 
+    }
+
+    .cinco {
+        grid-column: 1 / 5;
+        grid-row: 10;
+        padding-left: 4%;
+        padding-right: 4%;
+    }
+
+    .column2 {
+        width: 25%; 
+        float: left;
+        justify-content: center;
+        filter: grayscale(100%);
+        opacity: 25%;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        display: table-cell; 
+        vertical-align: middle; 
+        text-align: center;
+    }
+
+    .triangulo3 {
+        width: 0px;
+        height: 0px;
+        border-bottom: 100px solid;
+        border-left: 100px solid transparent;
+        opacity: 100% !important;
+        top: -100px;
+        left: calc(100% - 100px);
+        position: relative;
+        color: #f4f6fb;
+    }
+    
+    .triangulo4 {
+        width: 0px;
+        height: 0px;
+        border-top: 100px solid;
+        border-left: 100px solid transparent;
+        opacity: 100% !important;
+        top: -100px;
+        left: calc(100% - 100px);
+        position: relative;
+        color: #f4f6fb;
+    }
+
+    .seis {
+        grid-column: 1 / 5;
+        grid-row: 11;
+        height: 50px;
+        border-top: 3px solid #f4f6fb;
+    }
+
+    .art2 {
+        top: -100px;
+        padding-left: 10%;
+        padding-right: 60%;
+        position: relative;     
+    }
+
+    .siete {
+        grid-column: 1 / 5;
+        grid-row: 15;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .card2 {
+        margin: 5%; 
+        border: 3px solid ghostwhite;
+        border-left: 3px solid ghostwhite !important;
+        border-radius: 3%;
+    }
+
+    .cb2 {
+        margin: 15px;
+    }
+
+    .card-title {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        color: #1f3e72;
+        font-weight: 600;
+    }
+
+    .ocho {
+        grid-column: 1 / 5;
+        grid-row: 16;
+        /* border-bottom: 3px solid #f4f6fb; */
+    }
+
+    .triangulo5 {
+        width: 0px;
+        height: 0px;
+        border-bottom: 100px solid;
+        border-right: 100px solid transparent;
+        opacity: 100% !important;
+        bottom: -100px;
+        position: relative;
+        color: #f4f6fb;
+    }
+
+    .triangulo5:after {
+        content: "";
+        display: block;
+        position: relative;
+        bottom: -98px;
+        width: 50vw;
+        height: 3px;
+        background-color: #f4f6fb;
+    }
+
+    .triangulo6 {
+        width: 0px;
+        height: 0px;
+        border-top: 100px solid;
+        border-right: 100px solid transparent;
+        opacity: 100% !important;
+        bottom: -100px;
+        position: relative;
+        color: #f4f6fb;
+    }
+    
+    .nueve {
+        grid-column: 1 / 5;
+        grid-row: 17;   
+    }
+    
+    .art3 {
+        top: -30px;
+        padding-left: 60%;
+        padding-right: 10%;
+        position: relative;     
+    }
+
+    .diez {
+        grid-column: 1 / 3;
+        grid-row: 18;
+        height: 600px;
+        background: linear-gradient(to bottom right, #0899e6, #375fda);
+        text-align: center;
+        right: 15%;
+    }
+
+    .diez img, .catorce img {  
+        position: relative;
+        bottom: 25%;
+    }
+
+    .once {
+        grid-column: 3 / 5;
+        grid-row: 18;
+        padding-bottom: 350px;
+        border-bottom: 3px solid #f4f6fb;
+    }
+
+    .accordion {
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+
+    .accordion-button::after {
+        background-image: url("./img/flecha.png") !important;
+    }
+
+    .accordion-button span {
+        margin-right: 5%;
+    }
+
+    .material-icons {
+        padding: 1.5%;
+        border-radius: 15%;
+    }
+
+    .accordion-body {
+        margin-top: -3%;
+        padding-left: 17%;
+        padding-right: 12%;
+        color: slategray;
+        font-size: 14px;
+        opacity: 90%;
+    }
+
+    .accordion-item {
+        border: 1px solid ghostwhite;
+    }
+    
+    .doce {
+        grid-column: 1 / 5;
+        grid-row: 19;
+        height: 350px;
+    }
+
+    .triangulos78 {
+        top: 100px;
+    }
+
+    .trece {
+        grid-column: 1 / 5;
+        grid-row: 20;
+    }
+
+    .art4 {
+        top: -230px;
+    }
+    
+    .trece {
+        grid-column: 1 / 3;
+        grid-row: 20;
+        padding-left: 20%;
+        padding-right: 15%;
+        text-align: left;
+        margin: auto;
+    }
+    
+    .catorce {
+        grid-column: 3 / 5;
+        grid-row: 20;
+        height: 600px;
+        background: linear-gradient(to bottom right, #0899e6, #375fda);
+        text-align: center;
+        right: 15%;
+    }
+
+    .btn-info.active {
+        background-color: #f1f5ff !important;
+        border: none;
+        font-weight: bold;
+        color: #4e6ada;
+        width: 95%;
+    }
+
+    .btn {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    .btn-primary.active {
+        background-color: #3656d4 !important;
+        border: none;
+        font-weight: bold;
+        width: 95%;
+    }
+
+    .mi2 {
+        padding: 15px;
+        border-radius: 15%;
+        font-size: 32px;
+    }
+
+    .mi3 {
+        float: left;
+        margin-left: 2.5%;
+        margin-bottom: 15%;
+        margin-right: 5%;
+    }
+
+    .card3 {
+        border: 3px solid ghostwhite;
+    }
+
+    .quince {
+        grid-column: 1 / 5;
+        grid-row: 21;
+        height: 150px;
+    }
+
+    .dieciseis {
+        grid-column: 1 / 5;
+        grid-row: 22;
+        background-color: #eef3ff;
+        height: 50vh;
+        padding-top: 10vh;
+        padding-left: 10vw;
+        padding-right: 10vw;
+        z-index: -2;
+    }
+    
+    .v1, .v2 {
+        font-size: 24px;
+        font-weight: 900;
+        margin-bottom: 25px;
+    }
+
+    .col-6 {
+        padding-right: 25%;
+    }
+
+    .v1 {
+        color: #3858d6;
+    }
+
+    .p2 {
+        color: #6d7b93;
+        z-index: -1;
+    }
+
+    .v2 {
+        color: #1f3e72;
+    }
+
+    .diecisiete {
+        grid-column: 1 / 5;
+        grid-row: 23;
+        background-color: #eef3ff;
+        padding-left: 10vw;
+        padding-right: 10vw;
+        z-index: -2;
+    }
+</style>
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
     crossorigin="anonymous"></script>
-
 </html>

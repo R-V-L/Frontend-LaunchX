@@ -37,9 +37,9 @@ Al ser una single page se dividira por el tipo de contenido y las herramientas u
 1. Imagenes de contenido (doctores)  
 Se usaron las imagenes que fueron proveidas en el grupo de teams de LaunchX. Para agregar el background transparente se uso Adobe Photoshop (se intentaron usar multiples herramientas online, pero no dieron un resultado satisfactorio).
 2. Imagenes de vacunas  
-Obtenidas de Google images, se buscaron con efecto de transparencia para no tener que removerlo despues. Se aplico un filtro de escala de grises (filter: grayscale(100%)) para el efecto blanco y negro.
+Obtenidas de Google images, se buscaron con fondo transparente para no tener que removerlo despues. Se aplico un filtro de escala de grises (filter: grayscale(100%)) para el efecto blanco y negro.
 3. Imagenes varias  
-Los primeros 2 triangulos mostrados al principio de la pagina fueron generados con Photoshop, en realidad es uno solo mostrado 2 veces y al que se le modifico el tamaño... sin embargo al querer usarse mas adelante (debajo de la parte donde muestra las imagenes de las vacunas) se opto por generar uno con CSS puro. Por la razon de ser mas sencillo de esta forma y no tener que preocuparme por generar una imagen nueva.
+Los primeros 2 triangulos mostrados al principio de la pagina fueron generados con Photoshop, en realidad es uno solo mostrado 2 veces y al que se le modifico el tamaño desde CSS... sin embargo al querer usarse mas adelante (debajo de la parte donde muestra las imagenes de las vacunas) se opto por generar uno con CSS puro. Por la razon de ser mas sencillo de esta forma y no tener que preocuparme por generar una imagen nueva.
 4. Texto  
 Se decia que la parte del lenguaje estaba a criterio asi que decidi pasarlo al Español. Sin embargo hubieran algunas partes que no me convencieron, en especial la parte de "Hoax Buster" el cual traduci como "Engaños Sobre Vacunas", sin estar del todo conforme. Se aceptan sugerencias en la traduccion.
 5. Elementos  
@@ -50,5 +50,7 @@ Se uso exclusivamente Material Icons de Google, el cual parece ser el mismo tipo
 Quizas por mi inexperiencia con CSS pero me llevo mucho mas tiempo del que pensaba para realizarla. Facilmente arriba de las 30 horas, la mayoria de esas horas era relacionado a intentar alinear correctamente algun elemento o que se viera distinto al cambiar entre pantallas de diferentes DPI.
 8. Visual Studio Code  
 Desde la primer practica he utilizado VSC, pero esto me enseño algunas cosas adicionales y que facilitaron bastante el realizar estas practicas: la extension LiveServer, el cual permite modificar el proyecto sin necesidad de estar refrescando la pagina una y otra vez y el SCM integrado en Visual Studio, el cual me permite tener mi codigo actualizado en los repos facilmente.
+9. Varios  
+En un principio se utilizo la pagina [imagecolorpicker](https://imagecolorpicker.com/en) para obtener el color de los diferentes elementos de la pagina y de este modo que fuera lo mas fiel posible a la original. Actualmente uso esta extension del navegador para este mismo proposito (Color Picker).
 
-> **Nota:** Este documento sigue en progreso, conforme su servidor aprenda a usar markdown
+> **Nota:** Este documento sigue en progreso, conforme su servidor termine sus practicas y aprenda a usar markdown
