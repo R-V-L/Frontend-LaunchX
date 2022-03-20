@@ -58,7 +58,7 @@ En un principio se utilizo la pagina [imagecolorpicker](https://imagecolorpicker
 ## 04 - JS
 
 
-Accesible aqui: [Pokedex](https://rawcdn.githack.com/R-V-L/Frontend-LaunchX/26f1b6686566f769f06f525f34e7f7495dd6049e/04%20-%20JS/index.html?min=1)
+Accesible aqui: [Pokedex](https://rawcdn.githack.com/R-V-L/Frontend-LaunchX/26f1b6686566f769f06f525f34e7f7495dd6049e/04%20-%20JS/index.html?min=1)  
 4ta semana de Frontend. Se busca replicar un pokedex usando PokéAPI. Se uso HTML, CSS y Javascript para esta practica. Nuevamente se utilizo Bootstrap 5.1 para los estilos, ademas del archivo autocomplete.js para el autocompletado.
 
 1. HTML  
