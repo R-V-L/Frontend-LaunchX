@@ -53,4 +53,23 @@ Desde la primer practica he utilizado VSC, pero esto me enseño algunas cosas ad
 9. Varios  
 En un principio se utilizo la pagina [imagecolorpicker](https://imagecolorpicker.com/en) para obtener el color de los diferentes elementos de la pagina y de este modo que fuera lo mas fiel posible a la original. Actualmente uso esta extension del navegador para este mismo proposito (Color Picker).
 
+## 04 - JS
+
+4ta semana de Frontend. Se busca replicar un pokedex usando PokéAPI. Se uso HTML, CSS y Javascript para esta practica. Nuevamente se utilizo Bootstrap 5.1 para los estilos, ademas del archivo autocomplete.js para el autocompletado.
+
+1. HTML  
+Se busco mantenerse la pagina lo mas sencilla posible, se tiene un contenedor, dentro un titulo y una breve explicacion de la pagina. Un div donde se tiene una imagen como default de una pokebola y multiples "p" con contenido vacio, las cuales se llenaran posteriormente en el JS.  
+2. CSS  
+Se agrega estilo solamente a 2 elementos: el autocomplete, ya que sino aparece flotando a lado izquierdo de la pantalla. Y a la imagen, la cual se le agrega un borde rojo y gris.  
+3. Javascript  
+Se utilizan las siguientes funciones:
+    - obtenerNombresPokemon  
+    Para meter todos los nombres de los pokemon en el array "pokemon"  
+    - set_autocomplete  
+    Donde se le pasa el ID del input, el nombre del div donde se mostrara el autocomplete y el array "pokemon"  
+    - fetchPokemon  
+    Va al API y busca el nombre del pokemon deseado. En caso que exista manda la informacion necesaria a la funcion pokeInfo, en caso contrario se manda una alerta diciendo que el nombre del pokemon ingresado no existe.  
+    - pokeInfo  
+    Recibe la informacion del Pokemon y actualiza los datos en el HTML: incluido los movimientos, imagen, nombre, numero, etc  
+
 > **Nota:** Este documento sigue en progreso, conforme su servidor termine sus practicas y aprenda a usar markdown
