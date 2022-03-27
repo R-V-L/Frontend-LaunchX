@@ -27,7 +27,7 @@ Dirigido hacia aqui al presionar el boton de compra desde el index (cualquier bo
 3. comprar.html  
 Form con text input para nombre completo, telefono, correo electronico y direccion. Adicional a esto se agrega un combobox/dropdown-list para el tipo de entrega.
 4. detallescompra.html  
-Textarea simple con un summary de los detalles de la compra.
+Textarea con un summary de los detalles de la compra.
 
 ## 03 - CSS
 
@@ -57,7 +57,6 @@ En un principio se utilizo la pagina [imagecolorpicker](https://imagecolorpicker
 
 ## 04 - JS
 
-
 Accesible aqui: [Pokedex](https://rawcdn.githack.com/R-V-L/Frontend-LaunchX/26f1b6686566f769f06f525f34e7f7495dd6049e/04%20-%20JS/index.html?min=1)  
 4ta semana de Frontend. Se busca replicar un pokedex usando PokéAPI. Se uso HTML, CSS y Javascript para esta practica. Nuevamente se utilizo Bootstrap 5.1 para los estilos, ademas del archivo autocomplete.js para el autocompletado.
 
@@ -75,5 +74,28 @@ Se utilizan las siguientes funciones:
     Va al API y busca el nombre del pokemon deseado. En caso que exista manda la informacion necesaria a la funcion pokeInfo, en caso contrario se manda una alerta diciendo que el nombre del pokemon ingresado no existe.  
     - pokeInfo  
     Recibe la informacion del Pokemon y actualiza los datos en el HTML: incluido los movimientos, imagen, nombre, numero, etc  
+
+## 05 - VueJS
+
+5ta semana de Frontend. El proposito es, tomar la pagina realizada en la semana 2: "02 - HTML" y crearla en VueJS. Fue mas sencillo de lo que pense, gracias al uso de v-for se puede minimizar bastante al codigo.  
+
+1. Routes  
+El uso de las rutas fue bastante sencillo, basicamente copiar y pegar los que se tienen de ejemplo y renombrar. En el ejercicio se nos pedia una ruta para el cliente y otra para el empleado, sin embargo decidi agregar una 3ra que es para el proceso de compra.  
+2. Assets  
+Tuve la oportunidad de usar el logo que habia creado anteriormente para la practica, aqui meti 2 logos y un favicon.  
+3. Components  
+Meti el elemento "galeria", que es un card group con un card por cada pastel. En lugar de tener hardcodeado los ingredientes y precios estos son tomados del state.pasteles, de donde se toma el titulo, precio y url de imagen.  
+4. Views  
+Se tienen 3 views:
+    - Comprar.vue  
+    Donde se tiene las diferentes opciones para la compra "mensaje personalizado, extras, etc"  
+    - HomeView.vue  
+    Aqui se puede ver el contenido de la galeria.  
+    - Pastelero.vue  
+    La informacion del pastelero... en este ultimo me tome un poco de libertad, genere multiples Getters para obtener informacion aleatoria de ingredientes, pasteles y extras. Ademas que dependiendo de la cantidad de ingredientes (los cuales son obtenidos de manera aleatoria) es el color de fondo que tendra la celda (rojo si es menor a 1, amarillo si es menor a 6). Se hace algo parecido para los pedidos, donde cambia de color la celda en base al estatus del pedido.  
+5. store/index.js  
+La mayor parte de la informacion se escribio aqui, se escribieron las funciones para traer la info ademas de los datos de los pasteles, ingredientes, etc.  
+6. App.vue  
+Se agrega navbar, el cual sera visible desde todos los demas views/componentes.  
 
 > **Nota:** Este documento sigue en progreso, conforme su servidor termine sus practicas y aprenda a usar markdown
